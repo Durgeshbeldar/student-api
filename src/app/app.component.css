@@ -1,0 +1,210 @@
+
+.main-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.title{
+    background-color: rgb(0, 0, 0);;
+    width: 100%;
+    padding: 8px 0;
+    margin-bottom: 50px;
+    
+}
+.title h1{
+    color: white;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 4px;
+}
+/* Form Styling is Here...  */
+
+.form-container{
+ width: 54%;
+ align-items: center;
+ padding: 50px;
+ background-color: #87a4d6;
+ border-radius: 10px;
+ box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+ border: 1px solid #e0e0e0;
+}
+input {
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: 2px solid #02093c;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+.lable-text{
+    word-spacing: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+textarea{
+    width: 70%;
+    height: 120px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 2px solid #02093c;
+    border-radius: 5px;
+    outline: none;
+    resize: none; 
+}
+textarea::placeholder{
+    color: #585858;
+}
+textarea:focus{
+    border-color: #060026;
+    box-shadow: 0px 0px 8px rgba(18, 43, 26, 0.6);
+}
+input::placeholder {
+    color: #585858;
+}
+
+input:focus {
+    border-color: #060026;
+    box-shadow: 0px 0px 8px rgba(18, 43, 26, 0.6);
+}
+
+.radio-section{
+    display: flex;
+    height: 40px;
+    margin: 10px 0;
+    gap: 80px;
+}
+.radio-section label{
+    text-transform: uppercase;
+    font-family:sans-serif;
+    letter-spacing: 2px;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.radio-section label:hover{
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 800 !important;
+}
+
+.radio-section input[type="radio"]{
+    margin-top: 10px;
+    width: 22px;
+    height: 22px;
+    accent-color: #270ea4;
+    margin-right: 15px;
+}
+
+.radio-section input[type="radio"]:focus{
+    cursor: pointer !important;
+    box-shadow: none;
+}
+
+/* Style the button */
+button {
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    height: 50px;
+    padding: 0 60px;
+    background-color: #0b013c;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #810404;
+}
+
+/* // Task title  */
+.task-section{
+    width: 100%;
+}
+.task-title {
+    background-color: rgb(0, 0, 0);;
+    width: 100%;
+    padding: 2px 0px;
+    margin: 50px auto;
+}
+
+.task-title h2{
+    color: white;
+    text-align: center;
+    word-spacing: 6px;
+    letter-spacing: 4px;
+}
+
+table, th, tr,td{
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+.table-section table{
+    margin: 0 auto;
+    width: 90%;
+}
+th{
+    background-color: black;
+    color:white;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 16px;
+}
+td{
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+.srn{
+    width:8%;
+}
+.tn{
+    width:42%;
+}
+.d{
+    width: 14%;
+}
+.p{
+    width: 14%;
+}
+.dl{
+    width:12%;
+}
+.del{
+    width: 10%;
+}
+.del:hover{
+    font-size: 17px;
+    color: rgb(185, 0, 0);
+    font-weight: 800;
+    cursor: pointer;
+}
+.table-section {
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+    padding: 50px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e0e0e0;
+    margin-bottom: 100px;
+}

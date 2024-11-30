@@ -1,1 +1,63 @@
-<p>update-student works!</p>
+
+<app-student-header></app-student-header>
+<section class="add-section">
+    <div class="form-container">
+        <h2 style="text-align: center; padding:25px 10px;">UPDATE STUDENT DETAILS</h2>
+        <form [formGroup]="updateStudentForm" (ngSubmit)="updateStudent()">
+        <div class="form-row">
+          <!-- Roll Number -->
+          <mat-form-field appearance="fill" style="width: 500px;">
+            <mat-label>Can't Edit Roll No</mat-label>
+            <input matInput type="number" placeholder="Can't Edit Roll No" formControlName="rollNo">
+          </mat-form-field>
+     
+          <!-- Student Name -->
+          <mat-form-field appearance="fill" style="width: 500px;">
+            <mat-label>Update Student Name</mat-label>
+            <input matInput type="text" placeholder="Update Student Name" formControlName="name">
+          </mat-form-field>
+        </div>
+        <div class="form-row">
+            <!-- Age -->
+          <mat-form-field appearance="fill" style="width: 500px;">
+            <mat-label>Update Student Age</mat-label>
+            <input matInput type="number" placeholder="Update Student Age" formControlName="age">
+          </mat-form-field>
+      
+          <!-- Email Address -->
+          <mat-form-field appearance="fill" style="width: 500px;">
+            <mat-label>Update Email Address</mat-label>
+            <input matInput type="email" placeholder="Update Email Address" formControlName="email">
+          </mat-form-field>
+        </div>
+          
+        <div class="form-row">
+            <div class="lable-text">
+                <p style="color: rgb(255, 255, 255); font-size: 17px; font-weight: 500;">Select Gender</p>
+              </div>
+    
+              <div class="radio-section">
+                <mat-radio-group formControlName="isMale">
+                    <div style="display: flex; gap: 30px;">
+                  <mat-radio-button [value]="true">Male</mat-radio-button>
+                  <mat-radio-button [value]="false">Female</mat-radio-button>
+                </div>
+                </mat-radio-group>
+              </div>
+        </div>
+         
+        <div class="form-row">
+          <mat-form-field appearance="fill" style="width: 500px;">
+            <mat-label>Edit Admission Date</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Edit Admission Date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div> 
+          <!-- Submit Button -->
+          <div>
+            <button mat-raised-button color="primary" type="submit" style="background-color: rgb(5, 23, 54); font-size: 17px; padding: 22px 25px; margin-top: 15px;" >UPDATE STUDENT</button>
+          </div>
+        </form>
+      </div> 
+</section>

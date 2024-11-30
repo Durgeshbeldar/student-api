@@ -1,12 +1,4 @@
-.heading{
-    background-color: rgb(10, 13, 67);
-    padding: 5px 10px;
-    letter-spacing: 1.5px;
-    word-spacing: 3px;
-    color: rgb(197, 84, 9);
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
+
 
 .search-section{
     width: 80%;
@@ -23,11 +15,17 @@
     text-align: center;
 }
 .paginator-section{
-    margin: 20px 10px;
-    background-color: aqua !important;
+    background-color:rgb(217, 218, 220);
+ padding: 20px 10px;
+}
+.mat-mdc-paginator {
+background-color: rgb(217, 218, 220);
 }
 table{
     width: 80% !important;
+    background-color: rgb(217, 218, 220);
+    padding : 20px;
+    border-radius: 5px;
 }
 .crudSection{
     width: 80%;

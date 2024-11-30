@@ -69,14 +69,4 @@ export class AppComponent {
     this.isShow = false;
     this.student = null;
   }
-  updateData() {
-
-  }
-  // Function To Get Data From Task Form Entered By User..
-  submitData() {
-    this.studentService.addStudent(this.newStudentForm.value).subscribe(data => {
-      console.log(data);
-    });
-    this.loadStudents();
-  }
 }

@@ -18,6 +18,7 @@ export class AddStudentComponent {
   })
   submitData() {
     this.studentService.addStudent(this.newStudentForm.value).subscribe(data => {
+      alert("Student added successfully");
       console.log(data);
     });
   }

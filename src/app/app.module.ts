@@ -13,6 +13,11 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 import { HomeComponent } from './home/home.component';
 import { StudentHeaderComponent } from './student-header/student-header.component';
+import {MatInputModule} from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +33,11 @@ import { StudentHeaderComponent } from './student-header/student-header.componen
     ReactiveFormsModule, BrowserAnimationsModule,
     MatTableModule, MatPaginatorModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatRadioModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
